@@ -42,5 +42,5 @@ Escreva uma query que encontre os preços de todos os produtos no dia 2019-08-16
 <p align="center">
   <img src="https://github.com/lucasarauj0h/case-safra/blob/main/imgs/py_product.png" alt="Query realizando CTE's com os filtros desejados e uma clausula 'join' para inserir os produtos que não estão presentes no filtro (não foram alterados) (h" width="70%">
 </p>
-<h6 align="center">Query realizando CTE's com os filtros desejados e uma clausula 'join' <br> para inserir os produtos que não estão presentes no filtro (não foram alterados) em Python</h6>
+<h6 align="center">Query realizando criando dois DF's filtros desejados e realizando um merge<br> para inserir os produtos que não estão presentes no filtro (não foram alterados) em Python</h6>
 
