@@ -50,12 +50,11 @@ VALUES
 SELECT * 
 FROM case_safra.products;
 
-# Usando CTE's para realizar as querys e fazer o filtro que queremos.
-# O grande desafio aqui foi incluir os valores que não tiveram modificação até a data especificada
-# visto quando aplicado a clausula 'WHERE', não há sinal da existencia do product_id = 3, bem como poderiam existir infitos produtos
-# a solução pensada foi criar duas tabelas temporaria usando CTE's para que possamos verificar os produtos que tiveram o preço modificado
-# e também acesso aqueles que não tiveram o preço modificado.
-
+# Usando CTEs para realizar as queries e aplicar o filtro desejado.
+# O desafio principal aqui foi incluir os valores que não foram modificados até a data especificada.
+# Ao aplicar a cláusula 'WHERE', não é considerado o product_id = 3, bem como poderia haver infinitos id's de produtos.
+# A solução proposta envolve a criação de duas tabelas temporárias usando CTEs para identificar os produtos com preços modificados
+# e também acessar aqueles que não tiveram alterações nos preços.
 
 WITH
 # CTE para obter os preços mais recentes de cada produto antes da data especificada
